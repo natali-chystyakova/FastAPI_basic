@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список книг</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .book {
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Список книг</h1>
+    <div id="books"></div>
+
+    <script>
+        async function fetchBooks() {
+            try {
+                const response = await fetch('http://127.0.0.1:8000/books');
+                const books = await response.json();
+
+                const booksContainer = document.getElementById('books');
+                books.forEach(book => {
+                    const bookDiv = document.createElement('div');
+                    bookDiv.className = 'book';
+                    bookDiv.innerHTML = `<strong>${book.title}</strong><br>Автор: ${book.author}`;
+                    booksContainer.appendChild(bookDiv);
+                });
+            } catch (error) {
+                console.error('Ошибка при получении данных:', error);
+            }
+        }
+
+        fetchBooks();
+    </script>
+</body>
+</html>
