@@ -1,0 +1,32 @@
+fastapi[standard]==0.115.8
+uvicorn==0.20.0
+#For name generator - генератор фейковых имен
+faker==15.3.4
+
+#[code_style]-[BEGIN]
+#Pre_commit hook - проверяет перед комитами
+pre-commit==2.21.0
+#Upgrage syntax - обновлять синтаксис, например: анотация типов
+pyupgrade==3.3.1
+#Formatter. Apply codestyle
+black==22.12.0
+#Check odestyle
+flake8==6.0.0
+#Removes unused imports and unused variables
+autoflake==2.0.0
+#[code_style]-[END]
+
+#For making requests
+requests==2.28.2
+
+#For data validation using Python type hints
+pydantic==2.10.6
+
+#For databases
+aiosqlite==0.21.0
+SQLAlchemy==2.0.38
+
+greenlet==3.1.1
+
+# For user Registration and Authentication
+authx==1.4.1

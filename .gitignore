@@ -169,3 +169,8 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+.idea/
+tasks.db
+books.db
+db_data/*
+!db_data/.gitkeep
