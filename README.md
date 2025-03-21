@@ -13,15 +13,14 @@
 - pytest,
 - Docker,  etc.
 
-Install dependencies:
+##Install dependencies:
 run on command: make init-dev 
 
-
-Run the application:
+## Run the application:
 uvicorn main_[name_application]:app –reload
 
-Application main_pet_project.py can be run in Docker:
+## Application main_pet_project.py can be run in Docker:
 run on command: make d-project-i-run
 
-Removing a Docker Container
+## Removing a Docker Container
 run on command: make d-project-i-purge
