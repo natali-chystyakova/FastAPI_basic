@@ -1,11 +1,11 @@
-.PHONY: d-homework-i-run
+.PHONY: d-project-i-run
 # Make all actions needed for run homework from zero.
-d-homework-i-run:
+d-project-i-run:
 	make d-run
 
-.PHONY: d-homework-i-purge
+.PHONY: d-project-i-purge
 # Make all actions needed for purge homework related data.
-d-homework-i-purge:
+d-project-i-purge:
 	@make d-purge
 
 
