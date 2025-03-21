@@ -14,8 +14,7 @@
 - Docker,  etc.
 
 Install dependencies:
-run on command: make init-dev
-
+run on command: make init-dev 
 
 
 Run the application:
