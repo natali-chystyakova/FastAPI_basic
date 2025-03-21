@@ -16,6 +16,8 @@
 Install dependencies:
 run on command: make init-dev
 
+
+
 Run the application:
 uvicorn main_[name_application]:app –reload
 
